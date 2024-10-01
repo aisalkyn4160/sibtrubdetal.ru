@@ -1,0 +1,104 @@
+.pricelist{
+    color: black;
+}
+.price-table{
+   box-shadow: -2px 3px 8px rgba(0, 0, 0, 0.2);
+}
+ .price-head, .price-body{
+    display: grid;
+    /* grid-template-columns: 25% 1fr 1fr 1fr; */
+    grid-template-columns: 25% 30% 27% 17.7%;
+    color : black;
+ }
+ .price-head{
+    background-color: rgba(80, 80, 80, 1);
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+ }
+ .price-head div{
+    padding: 12px 0 13px;
+    text-align: center;
+ }
+ .price-ttl{
+    font-size: 18px;
+    background-color: rgba(0, 81, 159, 1);
+ }
+ .price-body div{
+    border-top: 1px solid rgba(80, 80, 80, 0.6);
+    border-left: 1px solid rgba(80, 80, 80, 0.6);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20.7px;
+    padding: 8px 0 8px;
+ }
+ .price-body .ttl{
+    padding-left: 52px;
+    padding-right: 46px;
+ } 
+ .price-body .price{
+  padding-left: 35%;
+ }
+ .price-body .availability{
+  padding-left: 33%;
+ }
+
+ .pricelist .btn{
+    display: block;
+    margin: 40px auto;
+ }
+.category-row{
+   grid-row: 1/5;
+   font-size: 24px;
+   line-height: 27.6px;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 50px;
+   border-bottom: 1px solid rgba(255, 255, 255, 1);
+   background-color: rgba(80, 80, 80, 1);
+   color: rgba(255, 255, 255, 1);
+   font-weight: 700;
+}
+
+@media (max-width: 900px){
+   .category-row{
+      font-size: 14px;
+   }
+   .price-body div{
+      font-size: 12px;
+   }
+}
+@media (max-width: 700px){
+   .price-table{
+      width: calc(100% + 30px);
+      margin-left: -15px;
+   }
+   .price-head,
+   .price-body{
+      width: 100%;
+      grid-template-columns: 1fr 1fr 1fr;
+   }
+   .price-ttl{
+      grid-column: 1/4;
+   }
+   .price-head div:nth-child(3){
+      border-left: 1px solid rgba(135, 135, 135, 1);
+      border-right: 1px solid rgba(135, 135, 135, 1);
+   }
+   .category-row{
+      grid-column: 1/4;
+      border-bottom: none;
+   }
+   .price-body .ttl {
+      padding-left: 18px;
+      padding-right: 3px;
+  }
+  .price-body .price {
+      padding-left: 24px;
+  }
+  .price-body .availability {
+      text-align: center;
+      padding-left: 10px;
+  }
+}

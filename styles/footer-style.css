@@ -1,0 +1,139 @@
+.footer{
+    background-color: rgba(80, 80, 80, 1);
+    padding: 40px 0 50px;
+}
+.footer .logo{
+    gap: 17px;
+    margin-bottom: 29px;
+}
+.footer .logo span{
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 28.2px;
+}
+
+.footer-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 72px;
+    gap: 35px;
+}
+.footer-top .contact-list{
+    margin-bottom: 40px;
+}
+.footer .menu-list{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 71px;
+}
+.footer-address{
+    margin-top: 59px;
+}
+.footer .order-btn{
+    margin-bottom: 67px;
+}
+
+.address-list li{
+    list-style-type: none !important;
+}
+.footer-bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-start;
+    font-size: 13.23px;
+    font-weight: 400;
+    line-height: 16.8px;
+    gap: 35px;
+}
+.privacy{
+    max-width: 180px;
+}
+
+.developer{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.developer p{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.footer-bottom span{
+    margin-left: 48px;
+}
+
+@media (max-width: 765px){
+    .footer-top{
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .footer-bottom{
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+   .footer-bottom span{
+       margin-left: 0;
+   } 
+}
+
+@media (max-width: 500px){
+    .footer-top{
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        position: relative;
+        padding-top: 250px;
+    }
+    .footer-top .logo{
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .footer-top .logo img{
+        width: 177px;
+    }
+    .footer-top nav{
+        grid-row: 1/2;
+        width: 100%;
+    }
+    .footer-top .menu-list{
+        align-items: center;
+        margin-top: 0;
+    }
+    .footer-address{
+        grid-row: 2/3;
+        margin-top: 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .footer-address .order-btn{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .footer .address-list,
+    .footer .contact-list{
+        align-items: center;
+        gap: 14px;
+    }
+    .footer .social-list{
+        margin: 0 auto;
+    }
+    .footer-bottom{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .footer-bottom span{
+        grid-row: 2/3;
+        text-align: center;
+    }
+    .privacy{
+        text-align: center;
+    }
+}
