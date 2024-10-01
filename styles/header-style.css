@@ -196,7 +196,7 @@ nav{
 }
 
 @media (max-width: 475px){
-	.menu-list{
+	.header .menu-list{
 		font-size: 14px;
 		line-height: 16.1px;
 		text-transform: initial;
