@@ -30,6 +30,9 @@ if(window.innerWidth <= 950) {
 const swiper = new Swiper('.swiper', {
     loop: true,
     effect: 'cube',
+    autoplay: {
+        delay: 5000
+    },
     fadeEffect: {
       crossFade: true
     },
